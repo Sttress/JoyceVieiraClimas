@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1>Clima tempo simples</h1>
+</div>
+<div class="container">
+    <div class="col-md-12">
+        <div style="display:block;" id="TabCidadesFrias">
+            @{
+                Html.RenderAction("TabDadosCidadesFrias", "Home");
+            }
+        </div>
+
+        <div style="display:block;" id="TabDadosCidadesQuentes">
+            @{
+                Html.RenderAction("TabDadosCidadesQuentes", "Home");
+            }
+        </div>
+    </div>
+
+    <div class="col-md-12 search-container">
+        <div class="col-md-8"></div>
+        <div class="col-md-4 form-group">
+            <label>Cidade:</label>
+            @Html.DropDownList("Cidades", null, string.Empty, new { @id = "CIDADES" ,@class="form-control"})
+        </div>
+    </div>
+
+    <div class="col-md-12">
+
+        <div style="display:block;" id="TabDadosDia">
+            @{
+                Html.RenderAction("TabDadosDia", "Home");
+            }
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    var input = document.querySelector('#CIDADES')
+    input.addEventListener('change', function () {
+        var data = event.target.value;
+        console.log(data);
+
+        $.ajax({
+            url: '@Url.Action("TabDadosDia","Home")',
+            dataType: 'json',
+            async: false,
+            data: { Cidade: data },
+        })
+    });
+
+
+</script>

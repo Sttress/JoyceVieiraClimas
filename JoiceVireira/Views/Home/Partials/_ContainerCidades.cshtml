@@ -1,0 +1,25 @@
+﻿@model JoiceVireira.Models.DTOs.CidadeDTO
+@{
+    ViewBag.Title = "_ContainerCidades";
+}
+<link href="~/Content/Home/ContainerCidades.css"/>
+
+<div class="col-md-6 col-sm-12 card-city">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Cidades mais<span> @ViewBag.Titulo </span>hoje</div>
+        </div>
+        <div class="card-body">
+            @foreach (var item in ViewBag.Itens)
+            {
+                <ul>
+                    <li id="CIDADE" style="width:60%" >@item.Cidade</li>
+                    <li id="MINIMA" style="width:20%">@item.Minima</li>
+                    <li id="MAXIMA" style="width:20%">@item.Maxima</li>
+                </ul>
+            }
+        </div>
+
+    </div>
+</div>
+

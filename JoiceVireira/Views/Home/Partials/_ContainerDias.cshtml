@@ -1,0 +1,31 @@
+﻿@model JoiceVireira.Models.DTOs.DiaDTO
+@{
+    ViewBag.Title = "_ContainerDias";
+}
+
+<div class="col-md-12 text-center">
+    <h2>Clima para os próximos sete dias na cidade de <span>@ViewBag.Cidade</span></h2>
+</div>
+
+<div class="col-md-12 row ">
+    @foreach (var item in ViewBag.Itens)
+    {
+        <div class="card card-days">
+            <div class="card-header">
+                <div class="card-title">@item.DiaSemana</div>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><i class="fa-solid fa-cloud-bolt-sun"></i>@item.Clima</li>
+                    <li>@item.Minima</li>
+                    <li>@item.Maxima</li>
+                </ul>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+

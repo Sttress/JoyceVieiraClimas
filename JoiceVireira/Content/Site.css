@@ -1,0 +1,77 @@
+﻿body{
+    min-width:410px;
+}
+/*Banner da Página */
+.jumbotron {
+    padding-bottom: 15px !important;
+}
+/*Banner da Página */
+
+/*Geral Cards Index */
+.card {
+    border: 0.5px solid #2f9ad1;
+    border-radius: 3px;
+}
+
+.card-header {
+    background-color: #2f9ad1;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.card-title {
+    margin-left: 20px;
+    width: 100%;
+}
+
+/*Geral Cards Index */
+
+/*Input Cidade*/
+.search-container {
+    margin-top: 20px;
+}
+
+.search-container input {
+    max-width: 100% !important;
+}
+/*Input Cidade*/
+
+/*Cards das Cidades*/
+.card-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right:10px;
+}
+
+.card-body li {
+    display: inline;
+    margin-right:10px;
+}
+.card-city {
+    padding-left: 0 !important;
+    padding-top: 20px;
+}
+/*Cards das Cidades*/
+/*Cards dos Dias*/
+.card-days {
+    margin: 10px;
+    max-width:200px;
+    float:left;
+}
+
+.card-days ul{
+    margin-top:10px;
+    margin-left:0px !important;
+    padding-left:15px;
+    flex-direction:column;
+}
+/*Cards dos Dias*/
+/*Estilo Candidato*/
+
+#DadosPessoais{
+    padding-top:50px;
+}
+
+/*Estilo Candidato*/
