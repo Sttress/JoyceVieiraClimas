@@ -1,0 +1,27 @@
+SQL --> 
+
+/*INSERT TABLE ESTADO*/
+
+insert into Estado(Id,Nome,UF)
+VALUES (1,'Goiás','GO'),(2,'Acre','AC'),(3,'Amazonas','AM'),(4,'Bahia','BA')
+
+/*INSERT TABLE ESTADO*/
+
+/*INSERT TABLE CIDADE*/
+
+insert into Cidade(Id,Nome,EstadoId)
+values(1,'Goiânia',1),(2,'Aparecida de Goiânia',1),(3,'Anápolis',1),(4,'Ilhéus',4),(5,'Salvador',4),(6,'Porto Seguro',4),(7,'Manaus',3),(8,'Barreirinha',3),(9,'Autazes',3)
+
+/*INSERT TABLE CIDADE*/
+
+/*INSERT TABLE PREVISAO_CLIMA*/
+
+set identity_insert PrevisaoClima on
+
+insert into PrevisaoClima(Id,CidadeId,DataPrevisao,Clima,TemperaturaMinima,TemperaturaMaxima)
+values (1,1,'2022-11-17','Tempestuoso',19,26),(2,1,'2022-11-18','Tempestuoso',14,25),(3,1,'2022-11-17','Tempestuoso',19,26),(4,1,'2022-11-19','Tempestuoso',19,26),(5,1,'2022-11-20','Tempestuoso',19,26),(6,1,'2022-11-21','Tempestuoso',19,26),(7,1,'2022-11-22','Tempestuoso',19,26),
+(8,7,'2022-03-10','Tempestuoso',12,32),(9,5,'2022-03-10','Tempestuoso',14,28),(10,8,'2022-03-10','Tempestuoso',16,17),(11,4,'2022-03-10','Tempestuoso',19,26),(12,3,'2022-03-10','Tempestuoso',7,15),(13,5,'2022-03-10','Tempestuoso',19,26),(14,6,'2022-03-10','Tempestuoso',22,26),
+(15,3,'2022-03-11','Tempestuoso',12,32),(16,3,'2022-03-12','Tempestuoso',14,28),(17,3,'2022-03-13','Tempestuoso',16,17),(18,3,'2022-03-14','Tempestuoso',19,26),(19,3,'2022-03-15','Tempestuoso',7,15),(20,3,'2022-03-16','Tempestuoso',19,26),(21,3,'2022-03-17','Tempestuoso',22,26),(22,3,'2022-03-18','Tempestuoso',22,26),(23,3,'2022-03-19','Tempestuoso',22,26),(24,3,'2022-03-20','Tempestuoso',22,26),(25,3,'2022-03-21','Tempestuoso',22,26),(26,1,'2022-03-11','Tempestuoso',12,32),(27,1,'2022-03-12','Tempestuoso',14,28),(28,1,'2022-03-13','Tempestuoso',16,17),(29,1,'2022-03-14','Tempestuoso',19,26),(30,1,'2022-03-15','Tempestuoso',7,15),(31,1,'2022-03-16','Tempestuoso',19,26),(32,1,'2022-03-17','Tempestuoso',22,26),(33,1,'2022-03-18','Tempestuoso',22,26),(34,1,'2022-03-19','Tempestuoso',22,26),(35,1,'2022-03-20','Tempestuoso',22,26),(36,1,'2022-03-21','Tempestuoso',22,26),(37,2,'2022-03-11','Tempestuoso',12,32),(38,2,'2022-03-12','Tempestuoso',14,28),(39,2,'2022-03-13','Tempestuoso',16,17),(40,2,'2022-03-14','Tempestuoso',19,26),(41,2,'2022-03-15','Tempestuoso',7,15),(42,2,'2022-03-16','Tempestuoso',19,26),(43,2,'2022-03-17','Tempestuoso',22,26),(44,2,'2022-03-18','Tempestuoso',22,26),(45,2,'2022-03-19','Tempestuoso',22,26),(46,2,'2022-03-20','Tempestuoso',22,26),(47,2,'2022-03-21','Tempestuoso',22,26)
+
+/*INSERT TABLE PREVISAO_CLIMA*/
+ 
