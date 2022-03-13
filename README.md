@@ -1,23 +1,17 @@
 <h1 align="center">Climas</h1>
-<p align="center">
-  <a href="#Sobre">Sobre</a>/
-  <a href="#Configuracao">Configuração</a>/
-  <a href="Funcoes">Funções</a>
-</p>
 
-
-#Sobre
+# Sobre
 
 <p>Este projeto trás de forma automatizada algumas funções como as cidades com dias mais quentes e frios registrados no dia,
   e dependendo de qual cidade escolher qual a previsão do clima para ela do dia e dos proximo 6 dias</p>
  
-#Configuracao
+# Configuracao
 
 <p>Para realizar a configuracao desse projeto basta fazer o commit para o <a href="https://visualstudio.microsoft.com/pt-br/downloads/">Visual Studio</a> ou seu Editor de código usual.</p>
 <p>Seguindo o caminho "JoiceVireira\JoiceVireira\Data\DbSQL" é possivel ter acesso a alguns arquivos de criação de uma base de dados e tabelas que o projeto utiliza,
 e ainda no mesmo caminho se encontrado o arquivo Inserts Data que conta com inserts que podem ser feitos.</p>
 
-#Funcoes
+# Funcões
 
 <h2>Cidades mais frias hoje </h2>
  <img src="https://user-images.githubusercontent.com/72620316/158080202-c4f09cfa-62ce-422b-ac19-8f8e39462fcf.png" >
