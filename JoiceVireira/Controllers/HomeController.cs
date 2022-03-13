@@ -11,7 +11,6 @@ namespace JoiceVireira.Controllers
     {
         private String ViewPath = "~/Views/Home/Partials";
         ClimaTempoSimplesEntities db = new ClimaTempoSimplesEntities();
-        private object _home;
 
         public ActionResult Index()
         {
